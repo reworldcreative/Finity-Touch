@@ -4,10 +4,402 @@
 "title":"Mainpage"
 })
 
-<body>
+<body class="container-fluid p-0">
     @@include('html/header.html',{})
 
+    <section class="hero container-fluid p-0">
+        <div class="hero__wrap">
+            <div class="row">
+                <div class="hero__first-col col-lg-7 col-md-12 p-0 order-lg-1 order-md-2 order-sm-2 order-2">
+                    <h1 class="hero__title">Finity Touch</h1>
+                    <div class="pe-4 hero__text-wrap">
+                        <p class="hero__text">
+                            Creating an ecosystem WEB 3.0 that you really want to use
+                        </p>
+                        <p class="hero__sub-text">
+                            Finity Touch creates the infrastructure for a secure and innovative future
+                        </p>
+
+                        <div class="hero__buttons p-0 justify-content-end">
+                            <button class="contact-button">Contact Us</button>
+                            <button class="contact-button contact-button_active">Buy Token</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="col-lg-5 col-md-12 p-0 order-lg-2 order-md-1 order-sm-1 order-1 d-flex justify-content-center">
+                    <img class="hero__image" src="@img/coin.png" alt="coin main">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ideas container-fluid p-0">
+        <div class="ideas__wrap">
+            <h2 class="section__title">Designed with the <span class="section__title_accent">idea</span></h2>
+
+            <div class="swiper ideas__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="ideas__item">
+                            <img class="ideas__icon" src="@img/icons/Marketplace.svg" alt="Marketplace icon">
+                            <h3 class="ideas__caption">Marketplace</h3>
+                            <p class="ideas__text">Discover the world of unique and exclusive NFT with the new Finity
+                                Touch
+                                trading platform</p>
+                            <a class="more-btn" href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ideas__item">
+                            <img class="ideas__icon" src="@img/icons/Fund.svg" alt="Fund icon">
+                            <h3 class="ideas__caption">Fund</h3>
+                            <p class="ideas__text">Finity Touch Foundation provides an opportunity to get maximum
+                                support
+                                for new ideas in the world of Web 3.0</p>
+                            <a class="more-btn" href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ideas__item">
+                            <img class="ideas__icon" src="@img/icons/Games.svg" alt="Games icon">
+                            <h3 class="ideas__caption">Games</h3>
+                            <p class="ideas__text">Play using the Finity token and have fun earning money. Your success
+                                is
+                                only in your hands!</p>
+                            <a class="more-btn" href="#">More</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="ideas__item">
+                            <img class="ideas__icon" src="@img/icons/Token.svg" alt="Token icon">
+                            <h3 class="ideas__caption">Token</h3>
+                            <p class="ideas__text">This is an asset that feeds the Finity Touch ecosystem and ensures
+                                the
+                                development of existing projects.</p>
+                            <a class="more-btn" href="#">More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="works container-fluid p-0">
+        <div class="works__wrap">
+            <h2 class="section__title visibility-hidden">works</h2>
+
+            <ul class="works__list p-0">
+                <li class="row works__item">
+                    <img class="spots__img" src="@img/spots/works-spot-1.png" alt="spot">
+                    <div class="image-wrap col-lg col-md-12 d-flex justify-content-center p-0">
+                        <img class="works__image" src="@img/fund.png" alt="fund">
+                    </div>
+                    <div class="col p-0 works__second-wrap">
+                        <div class="works__second-col">
+                            <h3 class="works__caption">Get <span class="green">grant</span> from <span
+                                    class="green">Finity
+                                    Foundation</span> </h3>
+                            <p class="works__text">We engage Web 3.0 developers to improve the Finnity Touch ecosystem.
+                                Finity
+                                Touch is ready to
+                                support your unique ideas, help in the development and marketing strategy of your
+                                product.
+                            </p>
+                        </div>
+
+                        <div class="d-md-flex d-sm-block works__footer align-items-end">
+                            <button class="find-button green col-md col-sm-12">Find out more <img
+                                    class="find-button__img" src="@img/arrows/slantedarrow.svg"
+                                    alt="slantedarrow"></button>
+
+                            <div class="lines col p-0"></div>
+                            <p class="works__sub-text">PRODUCT 01</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="row works__item">
+                    <img class="spots__img" src="@img/spots/works-spot-2.png" alt="spot">
+                    <div class="works__second-wrap col p-0 order-2 ordwr-xl-1 order-lg-1 order-md-2 order-sm-2">
+                        <div class="works__second-col">
+                            <h3 class="works__caption">Play<span class="blue">games</span> of the <span
+                                    class="blue">Future</h3>
+                            <p class="works__text">We strive to create a broad and integrated ecosystem of gaming
+                                enthusiasts and passionate developers. We focus on games using blockchain technology.
+                                This allows players to earn money and own their items in the form of NFT.
+                            </p>
+                        </div>
+
+                        <div class="d-md-flex d-sm-block works__footer align-items-end">
+                            <button class="find-button blue col">Find out more <img class="find-button__img"
+                                    src="@img/arrows/slantedarrow.svg" alt="slantedarrow"></button>
+
+                            <div class="lines col p-0"></div>
+                            <p class="works__sub-text">PRODUCT 02</p>
+                        </div>
+                    </div>
+                    <div
+                        class="image-wrap  col-lg col-md-12 d-flex justify-content-center order-1 ordwr-xl-2 order-lg-2 order-md-1 order-sm-1 p-0">
+                        <img class="works__image" src="@img/game.png" alt="game">
+                    </div>
+                </li>
+
+                <li class="row works__item">
+                    <img class="spots__img" src="@img/spots/works-spot-3.png" alt="spot">
+                    <div class="image-wrap col-lg col-md-12 d-flex justify-content-center p-0">
+                        <img class="works__image" src="@img/market.png" alt="market">
+                    </div>
+                    <div class="col p-0 works__second-wrap">
+                        <div class="works__second-col">
+                            <h3 class="works__caption">Trade <span class="orange">NFT</span> with a new <span
+                                    class="orange">Marketplace</span> </h3>
+                            <p class="works__text">The Finite Market is designed to trade new types of digital goods.
+                                You can buy, sell and participate in NFT auctions just like in real life. All
+                                non-fungible tokens in Finity Market are unique and can be used on FT platforms.
+                            </p>
+                        </div>
+
+                        <div class="d-md-flex d-sm-block works__footer align-items-end">
+                            <button class="find-button orange col">Find out more <img class="find-button__img"
+                                    src="@img/arrows/slantedarrow.svg" alt="slantedarrow"></button>
+
+                            <div class="lines col p-0"></div>
+                            <p class="works__sub-text">PRODUCT 03</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="team container-fluid p-0">
+        <img class="team__spot" src="@img/spots/team-spot-1.png" alt="spot">
+        <img class="team__spot" src="@img/spots/team-spot-2.png" alt="spot">
+        <div class="team__wrap">
+            <h2 class="section__title">Our Team</h2>
+
+            <div class="swiper team__slider">
+                <ul class="team__list swiper-wrapper">
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 2.jpg" alt="worker">
+                        <h4 class="worker__name">Tigran Chobanian</h4>
+                        <p class="worker__position">Founder & CFO</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 1.jpg" alt="worker">
+                        <h4 class="worker__name">Daniel Aushev</h4>
+                        <p class="worker__position">Co-Founder and CMO</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 7.jpg" alt="worker">
+                        <h4 class="worker__name">Erik Anastasian</h4>
+                        <p class="worker__position">Co-Founder Product Manager</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 8.jpg" alt="worker">
+                        <h4 class="worker__name">Daniel Hrinberh</h4>
+                        <p class="worker__position">Co-Founder & CEO</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 6.jpg" alt="worker">
+                        <h4 class="worker__name">Karen Shehunts</h4>
+                        <p class="worker__position">Strategic Advisor</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 5.jpg" alt="worker">
+                        <h4 class="worker__name">Tihon Belenkiy</h4>
+                        <p class="worker__position">UI/UX Designer</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 4.jpg" alt="worker">
+                        <h4 class="worker__name">Vladimir Kucher</h4>
+                        <p class="worker__position">Back-End Developer</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="team__item worker swiper-slide">
+                        <img class="worker__img" src="@img/team/worker 3.jpg" alt="worker">
+                        <h4 class="worker__name">Artem Prokopchuk</h4>
+                        <p class="worker__position">3D Artist</p>
+
+                        <ul class="socials">
+                            <li class="socials__item">
+                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+                            </li>
+                            <li class="socials__item">
+                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="d-flex more__wrap">
+                <button class="more__button">More <img class="more__img" src="@img/arrows/downarrow2.svg"
+                        alt="downarrow"></button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="partners container-fluid p-0">
+        <div class="partners__wrap">
+            <h2 class="section__title visibility-hidden">partners</h2>
+
+            <div class="swiper partners__slider">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/1inch_logo.png" alt="1inch logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/coingecko_logo.png" alt="coingecko logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/coinmarketcap_logo.png" alt="coinmarketcap logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/trustwallet_logo.png" alt="trustwallet logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/metamask_logo.png" alt="metamask logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/bsc_logo.png" alt="bsc logo">
+                    </div>
+                    <div class="swiper-slide partners__item">
+                        <img src="@img/partners/pancakeswap_logo.png" alt="pancakeswap logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     @@include('html/footer.html',{})
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script src="scripts/main.min.js"></script>
 </body>
 

@@ -1,37 +1,29 @@
 <header id='header' class="container-fluid header p-0 d-flex justify-content-start">
-    <div class="header__wrap align-items-center w-100 d-flex row">
+    <div class="header__wrap align-items-center w-100">
 
-        <nav class="navbar navigation navbar-expand-lg navbar-dark p-0 col">
-            <a class="logo navbar-brand align-items-end d-flex p-0 m-0 col-1" href="#">
-                <img class="logo__image" src="@img/logo.svg" alt="logo">
-                Finity Touch
-            </a>
-            <button class="navbar-toggler navigation__btn " type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav navigation__list col-xl p-0">
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link navigation__link p-0" href="#">Home</a>
-                    </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link navigation__link p-0" href="#">Marketplace</a>
-                    </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link navigation__link p-0" href="#">Token</a>
-                    </li>
-                    <li class="nav-item navigation__item">
-                        <a class="nav-link navigation__link p-0" href="#">Fund</a>
-                    </li>
-                </ul>
+        <nav class="navbar navigation navbar-expand-lg navbar-dark p-0 justify-content-between">
+            <div class="d-flex justify-content-between navigation__collapse">
+                <a class="logo navbar-brand align-items-center d-flex p-0 m-0" href="#">
+                    <img class="logo__image" src="@img/logo.svg" alt="logo">
+                    Finity Touch
+                </a>
+                <button class="navbar-toggler navigation__btn order-lg-2 order-md-2 order-sm-1" type="button"
+                    data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar__icon"></span>
+                    <span class="navbar__icon"></span>
+                    <span class="navbar__icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse order-lg-1 order-md-1 order-sm-2 justify-content-end"
+                id="navbarSupportedContent">
+                <div class="d-flex align-items-center justify-content-between navbar-collapse__item">
+                    @@include('navigation.html',{})
 
-                <div>EN</div>
-
-                <div class="header__icons col-1 p-0 justify-content-end">
-                    <button>Contact Us</button>
-                    <button>Buy Token</button>
+                    <div class="header__buttons p-0 justify-content-end">
+                        <button class="contact-button">Contact Us</button>
+                        <button class="contact-button contact-button_active">Buy Token</button>
+                    </div>
                 </div>
             </div>
         </nav>
