@@ -4,13 +4,14 @@
 "title":"Mainpage"
 })
 
-<body class="container-fluid p-0">
+<body class="container-fluid p-0 main">
     @@include('html/header.html',{})
 
     <section class="hero container-fluid p-0">
         <div class="hero__wrap">
-            <div class="row">
-                <div class="hero__first-col col-lg-7 col-md-12 p-0 order-lg-1 order-md-2 order-sm-2 order-2">
+            <div class="d-flex" style="
+            flex-wrap: wrap;">
+                <div class=" hero__first-col p-0 col-lg-7 col-md-12 order-lg-1 order-md-2 order-sm-2 order-2">
                     <h1 class="hero__title">Finity Touch</h1>
                     <div class="pe-4 hero__text-wrap">
                         <p class="hero__text">
@@ -91,11 +92,11 @@
         <div class="works__wrap">
             <h2 class="section__title visibility-hidden">works</h2>
 
-            <ul class="works__list p-0">
+            <ul class="works__list p-0 m-0">
                 <li class="row works__item">
                     <img class="spots__img" src="@img/spots/works-spot-1.png" alt="spot">
                     <div class="image-wrap col-lg col-md-12 d-flex justify-content-center p-0">
-                        <img class="works__image" src="@img/fund.png" alt="fund">
+                        <img class="works__image" src="@img/fund2m.png" alt="fund">
                     </div>
                     <div class="col p-0 works__second-wrap">
                         <div class="works__second-col">
@@ -125,7 +126,7 @@
                     <img class="spots__img" src="@img/spots/works-spot-2.png" alt="spot">
                     <div class="works__second-wrap col p-0 order-2 ordwr-xl-1 order-lg-1 order-md-2 order-sm-2">
                         <div class="works__second-col">
-                            <h3 class="works__caption">Play<span class="blue">games</span> of the <span
+                            <h3 class="works__caption">Play <span class="blue">games</span> of the <span
                                     class="blue">Future</h3>
                             <p class="works__text">We strive to create a broad and integrated ecosystem of gaming
                                 enthusiasts and passionate developers. We focus on games using blockchain technology.
@@ -150,7 +151,7 @@
                 <li class="row works__item">
                     <img class="spots__img" src="@img/spots/works-spot-3.png" alt="spot">
                     <div class="image-wrap col-lg col-md-12 d-flex justify-content-center p-0">
-                        <img class="works__image" src="@img/market.png" alt="market">
+                        <img class="works__image" src="@img/market2m.png" alt="market">
                     </div>
                     <div class="col p-0 works__second-wrap">
                         <div class="works__second-col">
@@ -182,29 +183,20 @@
         <div class="team__wrap">
             <h2 class="section__title">Our Team</h2>
 
-            <div class="swiper team__slider">
+            <div class="team__carusel">
                 <ul class="team__list swiper-wrapper">
-
 
                     <li class="team__item worker swiper-slide">
                         <img class="worker__img" src="@img/team/worker 2.jpg" alt="worker">
                         <h4 class="worker__name">Tigran Chobanian</h4>
                         <p class="worker__position">Founder & CFO</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -212,20 +204,12 @@
                         <h4 class="worker__name">Daniel Aushev</h4>
                         <p class="worker__position">Co-Founder and CMO</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -233,20 +217,12 @@
                         <h4 class="worker__name">Erik Anastasian</h4>
                         <p class="worker__position">Co-Founder Product Manager</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -254,20 +230,12 @@
                         <h4 class="worker__name">Daniel Hrinberh</h4>
                         <p class="worker__position">Co-Founder & CEO</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -275,20 +243,12 @@
                         <h4 class="worker__name">Karen Shehunts</h4>
                         <p class="worker__position">Strategic Advisor</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -296,20 +256,12 @@
                         <h4 class="worker__name">Tihon Belenkiy</h4>
                         <p class="worker__position">UI/UX Designer</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -317,20 +269,12 @@
                         <h4 class="worker__name">Vladimir Kucher</h4>
                         <p class="worker__position">Back-End Developer</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                            </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                            </li>
-                        </ul>
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
                     </li>
 
                     <li class="team__item worker swiper-slide">
@@ -338,44 +282,145 @@
                         <h4 class="worker__name">Artem Prokopchuk</h4>
                         <p class="worker__position">3D Artist</p>
 
-                        <ul class="socials">
-                            <li class="socials__item">
-                                <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
+                        @@include('html/socialsLinks.html',{
+                        "Instagram":"https://www.instagram.com",
+                        "LinkedIn":"https://www.linkedin.com",
+                        "Telegram":"https://web.telegram.org/z/",
+                        "Twitter":"https://twitter.com"
+                        })
+                    </li>
+                </ul>
+                <div class="collapse team__carusel_row" id="collapseExample">
+                    <div class="team__carusel">
+                        <ul class="team__list swiper-wrapper">
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 2.jpg" alt="worker">
+                                <h4 class="worker__name">Tigran Chobanian</h4>
+                                <p class="worker__position">Founder & CFO</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
                             </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Instagram.svg" alt="Instagram icon">
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 1.jpg" alt="worker">
+                                <h4 class="worker__name">Daniel Aushev</h4>
+                                <p class="worker__position">Co-Founder and CMO</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
                             </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Telegram.svg" alt="Telegram icon">
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 7.jpg" alt="worker">
+                                <h4 class="worker__name">Erik Anastasian</h4>
+                                <p class="worker__position">Co-Founder Product Manager</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
                             </li>
-                            <li class="socials__item">
-                                <img src="@img/socials/Twitter.svg" alt="Twitter icon">
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 8.jpg" alt="worker">
+                                <h4 class="worker__name">Daniel Hrinberh</h4>
+                                <p class="worker__position">Co-Founder & CEO</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
+                            </li>
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 6.jpg" alt="worker">
+                                <h4 class="worker__name">Karen Shehunts</h4>
+                                <p class="worker__position">Strategic Advisor</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
+                            </li>
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 5.jpg" alt="worker">
+                                <h4 class="worker__name">Tihon Belenkiy</h4>
+                                <p class="worker__position">UI/UX Designer</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
+                            </li>
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 4.jpg" alt="worker">
+                                <h4 class="worker__name">Vladimir Kucher</h4>
+                                <p class="worker__position">Back-End Developer</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
+                            </li>
+
+                            <li class="team__item worker swiper-slide">
+                                <img class="worker__img" src="@img/team/worker 3.jpg" alt="worker">
+                                <h4 class="worker__name">Artem Prokopchuk</h4>
+                                <p class="worker__position">3D Artist</p>
+
+                                @@include('html/socialsLinks.html',{
+                                "Instagram":"https://www.instagram.com",
+                                "LinkedIn":"https://www.linkedin.com",
+                                "Telegram":"https://web.telegram.org/z/",
+                                "Twitter":"https://twitter.com"
+                                })
                             </li>
                         </ul>
-                    </li>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex more__wrap">
+                <button class="more__button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                    aria-controls="collapseExample">More <img class="more__img" src="@img/arrows/downarrow2.svg"
+                        alt="downarrow"></button>
+            </div>
 
-
-                    <!-- 
-                        <div class="collapse" id="collapseExample">
+            <div class="swiper team__slider_wrap">
+                <div class="swiper team__slider">
+                    <ul class="team__list swiper-wrapper">
                         <li class="team__item worker swiper-slide">
                             <img class="worker__img" src="@img/team/worker 2.jpg" alt="worker">
                             <h4 class="worker__name">Tigran Chobanian</h4>
                             <p class="worker__position">Founder & CFO</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -383,20 +428,12 @@
                             <h4 class="worker__name">Daniel Aushev</h4>
                             <p class="worker__position">Co-Founder and CMO</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -404,20 +441,12 @@
                             <h4 class="worker__name">Erik Anastasian</h4>
                             <p class="worker__position">Co-Founder Product Manager</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -425,20 +454,12 @@
                             <h4 class="worker__name">Daniel Hrinberh</h4>
                             <p class="worker__position">Co-Founder & CEO</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -446,20 +467,12 @@
                             <h4 class="worker__name">Karen Shehunts</h4>
                             <p class="worker__position">Strategic Advisor</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -467,20 +480,12 @@
                             <h4 class="worker__name">Tihon Belenkiy</h4>
                             <p class="worker__position">UI/UX Designer</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -488,20 +493,12 @@
                             <h4 class="worker__name">Vladimir Kucher</h4>
                             <p class="worker__position">Back-End Developer</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
 
                         <li class="team__item worker swiper-slide">
@@ -509,34 +506,122 @@
                             <h4 class="worker__name">Artem Prokopchuk</h4>
                             <p class="worker__position">3D Artist</p>
 
-                            <ul class="socials">
-                                <li class="socials__item">
-                                    <img src="@img/socials/LinkedIn.svg" alt="LinkedIn icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Instagram.svg" alt="Instagram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Telegram.svg" alt="Telegram icon">
-                                </li>
-                                <li class="socials__item">
-                                    <img src="@img/socials/Twitter.svg" alt="Twitter icon">
-                                </li>
-                            </ul>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
                         </li>
-                    </div>
-                     -->
-                </ul>
 
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="d-flex more__wrap">
-                <button class="more__button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
-                    aria-controls="collapseExample">More <img class="more__img" src="@img/arrows/downarrow2.svg"
-                        alt="downarrow"></button>
-            </div>
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 2.jpg" alt="worker">
+                            <h4 class="worker__name">Tigran Chobanian</h4>
+                            <p class="worker__position">Founder & CFO</p>
 
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 1.jpg" alt="worker">
+                            <h4 class="worker__name">Daniel Aushev</h4>
+                            <p class="worker__position">Co-Founder and CMO</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 7.jpg" alt="worker">
+                            <h4 class="worker__name">Erik Anastasian</h4>
+                            <p class="worker__position">Co-Founder Product Manager</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 8.jpg" alt="worker">
+                            <h4 class="worker__name">Daniel Hrinberh</h4>
+                            <p class="worker__position">Co-Founder & CEO</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 6.jpg" alt="worker">
+                            <h4 class="worker__name">Karen Shehunts</h4>
+                            <p class="worker__position">Strategic Advisor</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 5.jpg" alt="worker">
+                            <h4 class="worker__name">Tihon Belenkiy</h4>
+                            <p class="worker__position">UI/UX Designer</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 4.jpg" alt="worker">
+                            <h4 class="worker__name">Vladimir Kucher</h4>
+                            <p class="worker__position">Back-End Developer</p>
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                        <li class="team__item worker swiper-slide">
+                            <img class="worker__img" src="@img/team/worker 3.jpg" alt="worker">
+                            <h4 class="worker__name">Artem Prokopchuk</h4>
+                            <p class="worker__position">3D Artist</p>
+
+                            @@include('html/socialsLinks.html',{
+                            "Instagram":"https://www.instagram.com",
+                            "LinkedIn":"https://www.linkedin.com",
+                            "Telegram":"https://web.telegram.org/z/",
+                            "Twitter":"https://twitter.com"
+                            })
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
         </div>
     </section>
 
@@ -576,8 +661,8 @@
     <section class="faq container-fluid p-0">
         <div class="faq__wrap">
 
-            <div class="row container-fluid p-0 m-0">
-                <div class="col-xl p-0 col-lg-12 text-center">
+            <div class="row container-fluid p-0 m-0 faq__container">
+                <div class="col-xl p-0 col-lg-12 faq__first-col">
                     <h2 class="section__title m-0">Frequently Asked Questions</h2>
                     <img class="faq__img" src="@img/FAQ.png" alt="faq">
                 </div>
@@ -654,7 +739,7 @@
             <h2 class="section__title">Follow Us On Social Media</h2>
 
             <div class="socials justify-content-center">
-                <div style="position: relative; left: 54px;"> <!--  style="position: relative;" -->
+                <div> <!--  style="position: relative;" -->
                     <img class="socials__base" src="@img/socials/base.png" alt="phone">
                     <img class="socials__mask mask" src="@img/socials/mask.png" alt="phone">
                     <div class="socials__list">
@@ -692,16 +777,17 @@
 
     <section class="contact container-fluid p-0">
         <div class="contact__wrap text-center">
-            <h2 class="section__title">Contact Us</h2>
+
             <img class="contact__image" src="@img/tokens.png" alt="tokens">
             <img class="contact__image_r" src="@img/tokens2.png" alt="tokens">
+            <h2 class="section__title">Contact Us</h2>
             <form class="contact__form">
                 <div class="form-group m-0">
                     <input type="text" class="form-control contact__control" id="exampleInputName" placeholder="Name">
                 </div>
                 <div class="form-group m-0">
                     <input type="email" class="form-control contact__control" id="exampleInputEmail"
-                        aria-describedby="emailHelp" placeholder="Email">
+                        aria-describedby="emailHelp" placeholder="Mail">
                 </div>
                 <div class="form-group m-0">
                     <input class="form-control contact__control" type="text" placeholder="Your message">

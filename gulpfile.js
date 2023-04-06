@@ -30,7 +30,7 @@ const sass = gulpSass(dartSass);
 
 const rootFolder = path.basename(path.resolve());
 
-const buildFolder = rootFolder; //rootFolder
+const buildFolder = "docs"; //rootFolder
 const srcFolder = "src";
 
 const isBuild = process.argv.includes("--build");
@@ -112,6 +112,7 @@ function scss(done) {
     .pipe(
       sass({
         outputStyle: "expanded",
+        includePaths: ["node_modules"],
       })
     )
     .pipe(ifPlugin(isBuild, groupCssMediaQueries()))

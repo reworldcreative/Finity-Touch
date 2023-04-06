@@ -8,9 +8,9 @@ items.forEach((item) => {
   item.addEventListener("click", function () {
     selectorBtn.innerHTML = item.text;
     selectorBtn.value = item.dataset.value;
-    console.log(
-      `innerHTML: ${selectorBtn.innerHTML}, value: ${selectorBtn.value}`
-    );
+    // console.log(
+    //   `innerHTML: ${selectorBtn.innerHTML}, value: ${selectorBtn.value}`
+    // );
   });
 });
 
@@ -74,10 +74,10 @@ const team_swiper = new Swiper(".team__slider", {
       slidesPerView: 2,
       slidesPerGroup: 1,
       spaceBetween: 10,
-      grid: {
-        rows: 1,
-        fill: "row",
-      },
+      // grid: {
+      //   rows: 1,
+      //   fill: "row",
+      // },
     },
     768: {
       slidesPerView: 2,
@@ -92,19 +92,19 @@ const team_swiper = new Swiper(".team__slider", {
       slidesPerView: 3,
       slidesPerGroup: 2,
       spaceBetween: 47,
-      grid: {
-        rows: 2,
-        fill: "row",
-      },
+      // grid: {
+      //   rows: 2,
+      //   fill: "row",
+      // },
     },
     1350: {
       slidesPerView: 4,
       slidesPerGroup: 2,
       spaceBetween: 47,
-      grid: {
-        rows: 2,
-        fill: "row",
-      },
+      // grid: {
+      //   rows: 2,
+      //   fill: "row",
+      // },
     },
   },
 });
@@ -124,17 +124,48 @@ const partners_swiper = new Swiper(".partners__slider", {
     },
     768: {
       spaceBetween: 60,
-      slidesPerView: 12,
+      slidesPerView: 2,
       slidesPerGroup: 1,
-      loop: false,
     },
     992: {
       spaceBetween: 60,
-      slidesPerView: 5,
+      slidesPerView: 3,
     },
     1200: {
       spaceBetween: 60,
       slidesPerView: 4.5,
+      loop: true,
+    },
+  },
+});
+
+const tokenideas_swiper = new Swiper(".token-ideas__swiper", {
+  touchRatio: 2,
+  // slidesPerView: 3,
+  watchOwerflow: true,
+  grabCursor: true,
+  // spaceBetween: 40,
+
+  breakpoints: {
+    300: {
+      slidesPerView: 1.1,
+      spaceBetween: 30,
+    },
+    375: {
+      slidesPerView: 1.5,
+      spaceBetween: 30,
+    },
+    768: {
+      slidesPerView: 1.9,
+      spaceBetween: 35,
+    },
+    992: {
+      slidesPerView: 2.3,
+      spaceBetween: 40,
+    },
+    1700: {
+      slidesPerView: 3,
+      spaceBetween: 40,
     },
   },
 });

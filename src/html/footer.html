@@ -1,1 +1,39 @@
-<footer></footer>
+<footer id='footer' class="container-fluid footer p-0">
+    <div class="footer__wrap">
+        <div class="footer__first-row d-flex align-items-center justify-content-between">
+            <nav class="navbar navigation navbar-expand-lg navbar-dark p-0 justify-content-between">
+                @@include('navigation.html',{})
+            </nav>
+
+            <div class="footer__buttons p-0 justify-content-end">
+                <button class="contact-button">Contact Us</button>
+                <button class="contact-button contact-button_active">Buy Token</button>
+            </div>
+
+            <!-- <div class="footer__second-row d-flex"> -->
+            <a class="logo navbar-brand align-items-center d-flex p-0 m-0" href="#">
+                <img class="logo__image" src="@img/logo.svg" alt="logo">
+                Finity Touch
+            </a>
+
+            <p class="footer__text d-flex">This website is maintained by Tihon Belenkiy. The contents and opinions
+                of this
+                website are those of Finity Touch.
+                Finity Touch provides links to cryptocurrency exchanges as a service to the public</p>
+            <!-- </div> -->
+        </div>
+
+        <!-- <div class="footer__second-row d-flex">
+            <a class="logo navbar-brand align-items-center d-flex p-0 m-0" href="#">
+                <img class="logo__image" src="@img/logo.svg" alt="logo">
+                Finity Touch
+            </a>
+
+            <p class="footer__text">This website is maintained by Tihon Belenkiy. The contents and opinions of this
+                website are those of Finity Touch.
+                Finity Touch provides links to cryptocurrency exchanges as a service to the public</p>
+        </div> -->
+
+        <img class="footer__image" src="@img/coins_footer.png" alt="tokens">
+    </div>
+</footer>
