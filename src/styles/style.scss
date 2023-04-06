@@ -1687,11 +1687,11 @@ body {
     pointer-events: none;
     z-index: -1;
 
-    &:first-child {
+    &_l {
       top: -500px;
     }
 
-    &:nth-child(2) {
+    &_r {
       right: 0px;
     }
   }
@@ -1851,6 +1851,13 @@ body {
     margin-bottom: 0px;
     position: relative;
     z-index: 10;
+  }
+
+  .socials {
+    &__icon {
+      width: 19px;
+      height: 19px;
+    }
   }
 
   .more {
@@ -2409,6 +2416,13 @@ body {
         left: 59.23%;
         top: 9%;
       }
+    }
+  }
+
+  .socials {
+    &__list {
+      left: 25px;
+      top: -20px;
     }
   }
 }
