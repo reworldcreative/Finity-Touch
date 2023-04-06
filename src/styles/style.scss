@@ -123,6 +123,7 @@ body {
 
 .header {
   font-style: normal;
+  position: absolute;
   background: rgba(13, 13, 13, 0.2);
   backdrop-filter: blur(15px);
   z-index: 20;
@@ -1853,12 +1854,12 @@ body {
     z-index: 10;
   }
 
-  .socials {
-    &__icon {
-      width: 19px;
-      height: 19px;
-    }
-  }
+  // .socials {
+  //   &__icon {
+  //     width: 19px;
+  //     height: 19px;
+  //   }
+  // }
 
   .more {
     &__button {
@@ -2360,10 +2361,12 @@ body {
         // left: 351px;
         // left: 310px;
         // top: 252px;
-        left: 28.1%;
-        top: 42.5%;
-        left: 24%;
-        top: 48%;
+        // left: 28.1%;
+        // top: 42.5%;
+        // left: 24%;
+        // top: 48%;
+        left: 26.5%;
+        top: 46%;
       }
 
       &_telegram {
@@ -2371,50 +2374,60 @@ body {
         // top: 33px;
         // left: 245px;
         // top: 10px;
-        left: 22.7%;
-        top: 4.5%;
+        // left: 22.7%;
+        // top: 4.5%;
         // left: 17.7%;
         // top: 5.5%;
+        left: 21.3%;
+        top: 7.5%;
       }
 
       &_discord {
         // left: 367px;
         // left: 430px;
         // top: -161px;
-        left: 29.3%;
-        top: -33.3%;
-        left: 25.5%;
-        top: -37.5%;
+        // left: 29.3%;
+        // top: -33.3%;
+        // left: 25.5%;
+        // top: -37.5%;
+        left: 27.5%;
+        top: -29.5%;
       }
 
       &_reddit {
         // left: 568px;
         // left: 520px;
         // top: 55px;
-        left: 41.9%;
-        top: -2.5%;
+        // left: 41.9%;
+        // top: -2.5%;
+        // left: 40.5%;
+        // top: -3%;
         left: 40.5%;
-        top: -3%;
+        top: 1%;
       }
 
       &_linkedin {
         // left: 673px;
         // top: -257px;
-        left: 48.5%;
-        top: -50.9%;
-        left: 48%;
-        top: -57%;
+        // left: 48.5%;
+        // top: -50.9%;
+        // left: 48%;
+        // top: -57%;
+        left: 47%;
+        top: -47.5%;
       }
 
       &_twitter {
         // left: 820px;
         // left: 760px;
         // top: 70px;
-        left: 58%;
-        top: 7.5%;
+        // left: 58%;
+        // top: 7.5%;
 
-        left: 59.23%;
-        top: 9%;
+        // left: 59.23%;
+        // top: 9%;
+        left: 56.23%;
+        top: 11%;
       }
     }
   }
@@ -2632,7 +2645,8 @@ body {
     position: absolute;
     left: 0px;
     // top: -300px;
-    top: -56.8%;
+    // top: -56.8%;
+    top: -64.8%;
     z-index: -1;
     width: 39.531%;
   }
@@ -3246,7 +3260,7 @@ body {
 
   &__swiper {
     // padding-top: 30px;
-    padding-left: 10.5% !important;
+    // padding-left: 10.5% !important;
     padding-top: 2px;
     padding-bottom: 2px;
   }
@@ -5136,7 +5150,8 @@ html,
   &__wrap {
     width: 100%;
     // margin-top: 334px;
-    @include rfs(334px, margin-top);
+    // @include rfs(334px, margin-top);
+    @include rfs(455px, margin-top);
   }
   .commingSoon {
     font-family: "Chakra Petch";
