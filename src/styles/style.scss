@@ -3190,7 +3190,8 @@ body {
 
 @media screen and (max-width: 992px) {
   .token-hero {
-    background-position: center top;
+    // background-position: center top;
+    background-position: center 80px;
     background-size: contain;
     background-repeat: no-repeat;
     padding-top: 0px;
@@ -3211,7 +3212,8 @@ body {
 
 @media screen and (max-width: 500px) {
   .token-hero {
-    padding-top: 282px;
+    // padding-top: 282px;
+    padding-top: 358px;
     background-size: 802px;
     margin-top: -15px;
     padding-bottom: 0px;
@@ -4318,7 +4320,8 @@ body {
 @media screen and (max-width: 992px) {
   .Fund {
     .token-hero {
-      background-position: center top;
+      // background-position: center top;
+      background-position: center 80px;
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -4343,6 +4346,7 @@ body {
   .Fund {
     .token-hero {
       background-size: 802px;
+      padding-top: 400px;
     }
   }
 }
@@ -4629,15 +4633,17 @@ body {
   .Fund {
     .ideas {
       &__swiper {
-        padding-left: 0px !important;
+        // padding-left: 0px !important;
+        padding-top: 0px !important;
+        padding-left: 32px !important;
       }
       .section__title {
         font-size: 33px;
       }
 
       &__item {
-        width: 238px;
-        height: 219px;
+        // width: 238px;
+        // height: 219px;
         padding: 15px 15.5px 16.5px 20px;
       }
 
@@ -5188,4 +5194,9 @@ html,
       letter-spacing: 0.12em;
     }
   }
+}
+
+.canvasjs-chart-container {
+  display: flex;
+  justify-content: center;
 }

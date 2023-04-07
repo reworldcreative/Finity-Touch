@@ -169,3 +169,52 @@ const tokenideas_swiper = new Swiper(".token-ideas__swiper", {
     },
   },
 });
+
+window.onload = function () {
+  CanvasJS.addColorSet("greenShades", [
+    //colorSet Array
+
+    "#FF7C1E",
+    "#42F4FF",
+    "#905BFF",
+    "#DB73FF",
+    "#FF9344",
+    "#76FFEF",
+    "#F36AFF",
+    "#FA5454",
+  ]);
+  var chart = new CanvasJS.Chart("chartContainer", {
+    // title: {
+    //   text: "Controlling Radius of Doughnut/Pie Chart",
+    // },
+    colorSet: "greenShades",
+    backgroundColor: "transparent",
+    data: [
+      {
+        type: "doughnut",
+        radius: "190%",
+        indexLabelPlacement: "outside",
+        startAngle: 260,
+        indexLabelMaxWidth: 120,
+        indexLabelTextAlign: "center",
+        indexLabelFontColor: "white",
+        indexLabelFontStyle: "bold",
+        indexLabelFontSize: 20,
+        radius: "90%", //change the radius here.
+        innerRadius: "80%",
+        dataPoints: [
+          { x: 10, y: 15, label: "1.5% Airdrop" },
+          { x: 20, y: 25, label: "2.5% Private Sale" },
+          { x: 30, y: 66, label: "6.6% Public Sale" },
+          { x: 40, y: 74, label: "7.4% Seedround" },
+          { x: 50, y: 120, label: "12% Team" },
+          { x: 60, y: 150, label: "15% Fund" },
+          { x: 70, y: 250, label: "25% Reserved" },
+          { x: 80, y: 300, label: "20% Ecosystem" },
+        ],
+      },
+    ],
+  });
+
+  chart.render();
+};
