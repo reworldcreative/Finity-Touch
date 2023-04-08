@@ -175,13 +175,21 @@ window.onload = function () {
     //colorSet Array
 
     "#FF7C1E",
+    "transparent",
     "#42F4FF",
+    "transparent",
     "#905BFF",
+    "transparent",
     "#DB73FF",
+    "transparent",
     "#FF9344",
+    "transparent",
     "#76FFEF",
+    "transparent",
     "#F36AFF",
+    "transparent",
     "#FA5454",
+    "transparent",
   ]);
   var chart = new CanvasJS.Chart("chartContainer", {
     // title: {
@@ -204,13 +212,21 @@ window.onload = function () {
         innerRadius: "80%",
         dataPoints: [
           { x: 10, y: 15, label: "1.5% Airdrop" },
+          { x: 10, y: 5, label: "" },
           { x: 20, y: 25, label: "2.5% Private Sale" },
+          { x: 10, y: 5, label: "" },
           { x: 30, y: 66, label: "6.6% Public Sale" },
+          { x: 10, y: 5, label: "" },
           { x: 40, y: 74, label: "7.4% Seedround" },
+          { x: 10, y: 5, label: "" },
           { x: 50, y: 120, label: "12% Team" },
+          { x: 10, y: 5, label: "" },
           { x: 60, y: 150, label: "15% Fund" },
+          { x: 10, y: 5, label: "" },
           { x: 70, y: 250, label: "25% Reserved" },
+          { x: 10, y: 5, label: "" },
           { x: 80, y: 300, label: "20% Ecosystem" },
+          { x: 10, y: 5, label: "" },
         ],
       },
     ],
