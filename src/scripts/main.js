@@ -113,26 +113,26 @@ const partners_swiper = new Swiper(".partners__slider", {
   grabCursor: true,
   watchOwerflow: true,
   slidesPerView: 5,
-  spaceBetween: 60,
+  spaceBetween: 50,
 
   breakpoints: {
     375: {
-      spaceBetween: 76,
+      spaceBetween: 33,
       slidesPerView: 1.8,
       slidesPerGroup: 1,
       loop: true,
     },
     768: {
-      spaceBetween: 60,
+      spaceBetween: 40,
       slidesPerView: 2,
       slidesPerGroup: 1,
     },
     992: {
-      spaceBetween: 60,
+      spaceBetween: 50,
       slidesPerView: 3,
     },
     1200: {
-      spaceBetween: 60,
+      spaceBetween: 55,
       slidesPerView: 4.5,
       loop: true,
     },
